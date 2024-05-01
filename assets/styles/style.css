@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Gravitas+One|Fjalla+One|Raleway);
+@import url('./navbar.css');
+@import url('./slider.css');
+@import url('./cards.css');
+@import url('./simple-gallery.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.main-50 {
+  background-image: url('../images/main-pattern.png');
+  background-repeat: repeat;
+  margin-left: 50%;
+  padding: 15px;
+  width: 50%;
+}
+
+.hr1 {
+  background-image: url('../images/hr1.png');
+  background-repeat: repeat;
+  height: 8px;
+  margin: 21px auto;
+  width: 131px;
+}
+
+.hr2 {
+  background-image: url('../images/hr2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 8px;
+  margin: 21px auto;
+  width: 75%;
+}
+
+.hr3 {
+  background-image: url('../images/hr3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 8px;
+  margin: 21px auto;
+  width: 75%;
+}

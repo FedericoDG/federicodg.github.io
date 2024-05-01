@@ -1,0 +1,119 @@
+.slider {
+  height: 100vh;
+  left: 230px;
+  position: fixed;
+  top: 0;
+  width: calc(50% - 230px);
+  z-index: 99;
+}
+
+.slider__container {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slider__list-item {
+  inset: 0 0 0 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: 500ms;
+}
+
+.slider__list-item.active {
+  opacity: 1;
+  z-index: 9;
+}
+.slider__list-item::after {
+  background-image: linear-gradient(to top, #000 10%, transparent);
+  bottom: 0;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.slider__list-item_content {
+  color: #ffffff;
+  font-family: 'Fjalla One', sans-serif;
+  height: 400px;
+  left: calc(((50% - 230px) + 75px));
+  max-width: 80%;
+  position: absolute;
+  top: 20%;
+  width: 300px;
+  z-index: 1;
+}
+
+.slider__list-item_image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.slider__list-item_content-title {
+  letter-spacing: 0.06em;
+  line-height: 42px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.slider__list-item_content-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.slider__list-item_content-link {
+  -moz-transition: ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  border: 2px solid #ac9176;
+  box-shadow: inset 0 0 0 0 #ac9176;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Fjalla One', sans-serif;
+  margin-left: 50px;
+  margin-top: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: ease-out 0.4s;
+  width: 200px;
+}
+
+.slider__list-item_content-link:hover {
+  box-shadow: inset 0 100px 0 0 #ac9176;
+}
+
+.slider__arrows {
+  bottom: 5%;
+  left: calc(50% - 40px);
+  position: absolute;
+  z-index: 99;
+}
+
+.slider__arrows button {
+  background-color: #ab9178;
+  border-radius: 20px;
+  border: none;
+  color: #eee;
+  font-family: monospace;
+  font-size: x-large;
+  height: 40px;
+  transition: 300ms;
+  width: 40px;
+}
+
+.slider__arrows button:hover {
+  background-color: #262626;
+  color: #ab9178;
+  cursor: pointer;
+}
+
+.slider__arrows i {
+  font-size: 14px;
+}

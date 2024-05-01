@@ -1,0 +1,221 @@
+.card1 {
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url('../images/promo1.jpg');
+  background-size: cover;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  height: 200px;
+  margin-bottom: 15px;
+  padding: 5px;
+  position: relative;
+}
+
+.card1 a {
+  text-decoration: none;
+}
+
+.card1__container {
+  align-items: center;
+  border: 2px solid #ac9176;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.card1__container .text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 200px;
+}
+
+.card1__container h1 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.card1__container h2 {
+  color: #ffffff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.column {
+  width: 100%;
+}
+
+.card2 {
+  background-color: #947b65;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;
+}
+
+.card2__container {
+  border: 2px solid #ac9176;
+  height: 100%;
+  padding: 20px 10px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.card2__container h1 {
+  color: #54483b;
+  font-family: 'Gravitas One', cursive;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.card2__container h2 {
+  color: #ffffff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.card2__container p {
+  color: #ccbcac;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.card3 {
+  background-color: transparent;
+  border: 4px solid #ffffff;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.card3__container {
+  height: 100%;
+  padding: 20px 10px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.card3__container h1 {
+  color: #333333;
+  font-family: 'Gravitas One', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.card3__container p {
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 10px 0;
+}
+
+.card3__container a {
+  -moz-transition: ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  background-color: #333333;
+  box-shadow: inset 0 0 0 0 #ac9176;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: ease-out 0.4s;
+  width: 200px;
+}
+
+.card4 {
+  background-color: #ffffff;
+  background-image: url('../images/promo2.jpg');
+  background-size: cover;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  height: 200px;
+  margin-bottom: 15px;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+}
+
+.card4 a {
+  text-decoration: none;
+}
+
+.card4__container {
+  align-items: center;
+  border: 2px solid #ac9176;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.card4__container .text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 200px;
+}
+
+.card4__container h1 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.card4__container h2 {
+  color: #ffffff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.card5 {
+  width: 100%;
+  padding: 5px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  height: 200px;
+  background-image: url('../images/promo3.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.card5 a {
+  text-decoration: none;
+}

@@ -1,0 +1,120 @@
+.navbar {
+  background-image: url('../images/menu-pattern.jpg');
+  bottom: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.45) !important;
+  color: #ffffff;
+  height: 100%;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 230px;
+  z-index: 4;
+}
+
+.navbar__container {
+  border: 2px solid #ac9176;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.navbar__container-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 47px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__container-item {
+  margin: 0 2rem;
+}
+
+.navbar__container-item a {
+  color: #ac9176;
+  display: block;
+  overflow: hidden;
+  padding: 0.1rem 0;
+  position: relative;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.navbar__container-item a:hover {
+  color: #ffffff;
+}
+
+.navbar__container-item a::after {
+  background-color: #ffffff;
+  bottom: 0;
+  content: '';
+  height: 0.1rem;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transform: translate3d(-100%, 0, 0);
+  transition: opacity 300ms, transform 300ms;
+  width: 100%;
+}
+
+.navbar__container-item a:hover::after,
+.navbar__container-item a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.navbar__container-location,
+.navbar__container-open {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar__container-location_title,
+.navbar__container-open_title {
+  color: #ab9178;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.navbar__container-location_text,
+.navbar__container-open_text {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.navbar__container-social {
+  color: #ac9176;
+  display: flex;
+  font-size: 26px;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.navbar__container-social i {
+  transition: 300ms;
+}
+
+.navbar__container-social i:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navbar__container-item .active {
+  color: #ffffff;
+}
+
+.navbar__container-item .active::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
