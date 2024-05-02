@@ -124,6 +124,43 @@
   font-weight: 400;
   letter-spacing: 0.06em;
 }
+.card3__container h2 {
+  color: #947b65;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.card3__container h3 {
+  color: #333333;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.card3__container h3:last-child {
+  margin-bottom: 25px;
+}
+
+.card3__container .social {
+  color: #ac9176;
+  color: #333333;
+  display: flex;
+  font-size: 36px;
+  gap: 24px;
+  justify-content: center;
+  cursor: pointer;
+}
+.card3__container .social i {
+  transition: 300ms;
+}
+
+.card3__container .social i:hover {
+  color: #ac9176;
+}
 
 .card3__container p {
   color: #333333;

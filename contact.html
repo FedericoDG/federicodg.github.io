@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gravitas+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/contact.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <title>Charlotte Café</title>
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div class="loader">
+    <div class="circle"></div>
+  </div>
+
+  <div class="container">
+    <!-- SIDEBAR -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a class="navbar__container-logo" href="#">
+          <img src="./assets/images/logo.png" alt="Logotipo">
+        </a>
+
+        <div class="hr1"></div>
+
+        <ul class="navbar__container-list">
+          <li class="navbar__container-item">
+            <a href="./index.html">INICIO</a>
+          </li>
+          <li class="navbar__container-item">
+            <a href="#">MENU</a>
+          </li>
+          <li class="navbar__container-item">
+            <a href="#">GALERÍA</a>
+          </li>
+          <li class="navbar__container-item">
+            <a href="#">NOSOTROS</a>
+          </li>
+          <li class="navbar__container-item">
+            <a class="active" href="#">CONTACTO</a>
+          </li>
+        </ul>
+
+        <div class="hr1"></div>
+
+        <div class="navbar__container-location">
+          <h5 class="navbar__container-location_title">DIRECCIÓN</h5>
+          <P class="navbar__container-location_text">SAN MARTÍN 166</>
+          <P class="navbar__container-location_text">VILLA DE MERLO (SAN LUIS)</>
+        </div>
+
+        <div class="hr2"></div>
+
+        <div class="navbar__container-open">
+          <h5 class="navbar__container-open_title">ESTAMOS ABIERTOS</h5>
+          <P class="navbar__container-open_text">LUN-SAB: 8 a 21 hs.</>
+          <P class="navbar__container-open_text">DOMINGOS: 8 a 13 hs.</>
+        </div>
+
+        <div class="navbar__container-social">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- SIDEBAR -->
+
+    <!-- SLIDER -->
+    <div class="slider">
+      <div id="map">
+        <div class="notification-container" id="notification">
+          <figure class="notification">
+            <div class="notification__body">
+              <div class="notification__description">
+                <div class="icon__wrapper" id="icon__wrapper">
+                </div>
+                <p id="message"></p>
+              </div>
+            </div>
+            <div class="notification__progress" id="notification__progress"></div>
+          </figure>
+        </div>
+      </div>
+      <!-- NOTIFICATION -->
+    </div>
+  </div>
+  <!-- SLIDER -->
+
+  <!-- MAIN -->
+  <main class="main-30">
+    <!-- FORM -->
+    <div class="card3">
+      <div class="card3__container">
+        <h1>ESTAMOS EN CONTACTO</h1>
+        <div class="hr2"></div>
+        <h2>DIRECCIÓN</h2>
+        <h3>SAN MARTÍN 166</h3>
+        <h3>VILLA DE MERLO, SAN LUIS</h3>
+        <div class="hr2"></div>
+        <h2>TELÉFONO</h2>
+        <h3>0266 492488</h3>
+        <div class="hr2"></div>
+        <h2>ESTAMOS ABIERTOS</h2>
+        <h3>LUNES-SÁBADOS: 8 A 21 HS.</h3>
+        <h3>DOMINGOS: 8 A 13 HS.</h3>
+        <div class="hr1"></div>
+        <div class="social">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <div class="hr1"></div>
+        <h1>CUÉNTANOS ALGO</h1>
+        <div class="hr2"></div>
+        <form class="contact-form" id="contact-form">
+          <input type="text" name="name" placeholder="Tu nombre" id="form-name" autofocus>
+          <input type="text" name="email" placeholder="Tu correo" id="form-email">
+          <textarea name="message" cols="30" rows="8" placeholder="Mensaje" id="form-message"></textarea>
+          <button href="" class="send-btn">ENVIAR</>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="./assets/js/openMap.js"></script>
+  <script src="./assets/js/contact-form.js"></script>
+  </script>
+</body>
+
+</html>
