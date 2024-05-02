@@ -26,15 +26,15 @@
 }
 
 .simple-gallery .char-container {
-  position: absolute;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   left: 0;
+  opacity: 1;
+  position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
 }
 
 .simple-gallery .char-container h1 {
