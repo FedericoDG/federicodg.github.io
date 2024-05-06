@@ -2,8 +2,11 @@
     a {
         text-decoration: none;
     }
-    margin-top: 10px;
-    margin-left: 190px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 
