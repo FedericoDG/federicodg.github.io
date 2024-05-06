@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/styles/galery.css">
+  <link rel="stylesheet" href="./assets/styles/lightbox.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gravitas+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <link rel="stylesheet" href="./assets/styles/contact.css">
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,9 +21,7 @@
 
 <body>
   <!-- LOADER -->
-  <div class="loader">
-    <div class="circle"></div>
-  </div>
+  <!-- LOADER -->
 
   <div class="container">
     <!-- SIDEBAR -->
@@ -43,13 +41,13 @@
             <a href="#">MENU</a>
           </li>
           <li class="navbar__container-item">
-            <a href="./galery.html">GALERÍA</a>
+            <a class="active" href="#">GALERÍA</a>
           </li>
           <li class="navbar__container-item">
             <a href="#">NOSOTROS</a>
           </li>
           <li class="navbar__container-item">
-            <a class="active" href="#">CONTACTO</a>
+            <a href="./contact.html">CONTACTO</a>
           </li>
         </ul>
 
@@ -77,70 +75,46 @@
       </div>
     </nav>
     <!-- SIDEBAR -->
+    <main class="main-galery">
+      <div class="galery">
 
-    <!-- SLIDER -->
-    <div class="slider">
-      <div id="map">
-        <div class="notification-container" id="notification">
-          <figure class="notification">
-            <div class="notification__body">
-              <div class="notification__description">
-                <div class="icon__wrapper" id="icon__wrapper">
-                </div>
-                <p id="message"></p>
-              </div>
-            </div>
-            <div class="notification__progress" id="notification__progress"></div>
-          </figure>
+        <div class="hr1"></div>
+        <div class="galery_grid">
+
+          <a href="./assets/images/simple-gallery-01.jpg" data-lightbox="models">
+            <img src="./assets/images/simple-gallery-01.jpg" alt="">
+          </a>
+          <a href="./assets/images/simple-gallery-02.jpg" data-lightbox="models">
+            <img src="./assets/images/simple-gallery-02.jpg" alt="">
+          </a>
+          <a href="./assets/images/simple-gallery-03.jpg" data-lightbox="models">
+            <img src="./assets/images/simple-gallery-03.jpg" alt="">
+          </a>
+          <a href="./assets/images/simple-gallery-04.jpg" data-lightbox="models">
+            <img src="./assets/images/simple-gallery-04.jpg" alt="">
+          </a>
+          <a href="./assets/images/simple-gallery-05.jpg" data-lightbox="models">
+            <img src="./assets/images/simple-gallery-05.jpg" alt="">
+          </a>
+          <a href="./assets/images/simple-gallery-06.jpg" data-lightbox="models">
+            <img src="./assets/images/simple-gallery-06.jpg" alt="">
+          </a>
+          <a href="./assets/images/simple-gallery-07.jpg" data-lightbox="models">
+            <img src="./assets/images/simple-gallery-07.jpg" alt="">
+          </a>
+          <a href="./assets/images/simple-gallery-08.jpg" data-lightbox="models">
+            <img src="./assets/images/simple-gallery-08.jpg" alt="">
+          </a>
+          <a href="./assets/images/taza.png" data-lightbox="models" data-title="Caption9">
+            <img src="./assets/images/taza.png" alt="">
+          </a>
         </div>
+        <div class="hr1"></div>
       </div>
-      <!-- NOTIFICATION -->
-    </div>
+
+    </main>
   </div>
-  <!-- SLIDER -->
-
-  <!-- MAIN -->
-  <main class="main-30">
-    <!-- FORM -->
-    <div class="card3">
-      <div class="card3__container">
-        <h1>ESTAMOS EN CONTACTO</h1>
-        <div class="hr2"></div>
-        <h2>DIRECCIÓN</h2>
-        <h3>SAN MARTÍN 166</h3>
-        <h3>VILLA DE MERLO, SAN LUIS</h3>
-        <div class="hr2"></div>
-        <h2>TELÉFONO</h2>
-        <h3>0266 492488</h3>
-        <div class="hr2"></div>
-        <h2>ESTAMOS ABIERTOS</h2>
-        <h3>LUNES-SÁBADOS: 8 A 21 HS.</h3>
-        <h3>DOMINGOS: 8 A 13 HS.</h3>
-        <div class="hr1"></div>
-        <div class="social">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-square-facebook"></i>
-          <i class="fa-brands fa-x-twitter"></i>
-        </div>
-        <div class="hr1"></div>
-        <h1>CUÉNTANOS ALGO</h1>
-        <div class="hr2"></div>
-        <form class="contact-form" id="contact-form">
-          <input type="text" name="name" placeholder="Tu nombre" id="form-name" autofocus>
-          <input type="text" name="email" placeholder="Tu correo" id="form-email">
-          <textarea name="message" cols="30" rows="8" placeholder="Mensaje" id="form-message"></textarea>
-          <button href="" class="send-btn">ENVIAR</>
-        </form>
-      </div>
-    </div>
-  </main>
-
-
-
-  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-  <script src="./assets/js/openMap.js"></script>
-  <script src="./assets/js/contact-form.js"></script>
-  </script>
+  <script src="./assets/js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>

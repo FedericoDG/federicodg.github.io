@@ -1,0 +1,21 @@
+.galery_grid {
+    a {
+        text-decoration: none;
+    }
+
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 190px;
+}
+
+
+.galery_grid img {
+    margin: 20px;
+    border: 1px solid #ac9176;
+    transition: all 300ms;
+
+}
+
+.galery_grid img:hover {
+    transform: scale(1.05);
+}
