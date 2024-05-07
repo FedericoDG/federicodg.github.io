@@ -51,6 +51,8 @@ function onFormSubmit(event) {
     return;
   }
 
+  // TODO: Validar formato del nombre. Crear una Regex para eso llamada checkName.
+
   if (!checkEmail.test(object.email)) {
     formEmail.focus();
     formEmail.classList.add('error2');
