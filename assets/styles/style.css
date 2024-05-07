@@ -17,7 +17,6 @@
 .container {
   display: flex;
   position: relative;
-  max-height: 100vh;
 }
 
 .main-50 {
