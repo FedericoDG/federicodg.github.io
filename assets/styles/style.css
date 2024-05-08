@@ -34,6 +34,7 @@
   padding: 15px;
   width: 30%;
 }
+
 .main-galery{
   background-image: url('../images/main-pattern.png');
   background-repeat: repeat;
@@ -41,6 +42,7 @@
   width: 100%;
   height: 100%;
 }
+
 
 .hr1 {
   background-image: url('../images/hr1.png');

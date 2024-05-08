@@ -43,6 +43,7 @@ function onFormSubmit(event) {
     showNotification('Escribe tu nombre', TYPE.error);
     return;
   }
+  // TODO: Validar formato del nombre. Crear una Regex para eso llamada checkName.
 
   if (object.email === '') {
     formEmail.focus();
@@ -51,7 +52,6 @@ function onFormSubmit(event) {
     return;
   }
 
-  // TODO: Validar formato del nombre. Crear una Regex para eso llamada checkName.
 
   if (!checkEmail.test(object.email)) {
     formEmail.focus();

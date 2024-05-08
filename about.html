@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/about.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gravitas+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>Charlotte Café</title>
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div class="loader">
+        <div class="circle"></div>
+    </div>
+    <div class="container">
+        <!-- SIDEBAR -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a class="navbar__container-logo" href="/">
+                    <img src="./assets/images/logo.png" alt="Logotipo">
+                </a>
+
+                <div class="hr1"></div>
+
+                <ul class="navbar__container-list">
+                    <li class="navbar__container-item">
+                        <a href="./index.html">INICIO</a>
+                    </li>
+                    <li class="navbar__container-item">
+                        <a href="#">MENU</a>
+                    </li>
+                    <li class="navbar__container-item">
+                        <a href="./galery.html">GALERÍA</a>
+                    </li>
+                    <li class="navbar__container-item">
+                        <a href="#" class="active">NOSOTROS</a>
+                    </li>
+                    <li class="navbar__container-item">
+                        <a href="./contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+
+                <div class="hr1"></div>
+
+                <div class="navbar__container-location">
+                    <h5 class="navbar__container-location_title">DIRECCIÓN</h5>
+                    <P class="navbar__container-location_text">SAN MARTÍN 166</>
+                    <P class="navbar__container-location_text">VILLA DE MERLO (SAN LUIS)</>
+                </div>
+
+                <div class="hr2"></div>
+
+                <div class="navbar__container-open">
+                    <h5 class="navbar__container-open_title">ESTAMOS ABIERTOS</h5>
+                    <P class="navbar__container-open_text">LUN-SAB: 8 a 21 hs.</>
+                    <P class="navbar__container-open_text">DOMINGOS: 8 a 13 hs.</>
+                </div>
+
+                <div class="navbar__container-social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- SIDEBAR -->
+
+        <!-- SLIDER -->
+        <div class="slider">
+            <div class="slider__container">
+                <div class="slider__list">
+                    <div class="slider__list-item active">
+                        <img class="slider__list-item_image" src="./assets/images/slider1.jpg" alt="Slider 1">
+                        <div class="slider__list-item_content">
+                            <div class="hr2"></div>
+                            <h1 class="slider__list-item_content-title">SOBRE NUESTRO CAFÉ</h1>
+                            <p class="slider__list-item_content-text">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Enim
+                                cupiditate quos quaerat corporis laborum</p>
+                            <div class="hr2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__arrows" id="slider-arrows">
+                    <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER -->
+        <script src=" ./assets/js/slider.js">
+            window.onload = function () { document.querySelector('.loader').style.display = 'none'; };
+        </script>
+        <!-- MAIN -->
+        <main class="main-50">
+            <div class="textFrame">
+                <p class="text-18">
+                    Te damos la bienvenida a nuestra apasionada cafetería donde el café no es solo una bebida, es
+                    nuestra obsesión. Desde el primer aroma hasta el último sorbo, nuestro equipo está dedicado a
+                    brindarte una experiencia excepcional. Nos apasiona no solo el café, sino también brindar un
+                    servicio que te haga sentir bienvenido y apreciado en cada visita. Nuestro compromiso es superar tus
+                    expectativas, y te invitamos a unirte a nuestra comunidad de amantes del café. ¡Esperamos con ansias
+                    darte la bienvenida y compartir una taza de café y una sonrisa contigo!
+                </p>
+                <h5>
+                    NUESTRO CAFÉ
+                </h5>
+                <p class="text-13">
+                    Descubre en nuestra cafetería una amplia y exquisita variedad de café, donde la calidad es nuestra
+                    máxima prioridad. Desde los intensos granos de origen hasta los sutiles blends artesanales, cada
+                    taza que servimos es un tributo a la excelencia. Seleccionamos cuidadosamente nuestros granos de las
+                    mejores regiones productoras del mundo y cada paso, desde el cultivo hasta la taza, se realiza con
+                    meticulosa atención para garantizar una experiencia de sabor incomparable. Te invitamos a explorar
+                    nuestra selección y disfrutar de la riqueza y el carácter únicos que ofrecen nuestros cafés de
+                    calidad superior.
+                </p>
+                <img src="./assets/images/about.jpg" alt="foto de camarero">
+                <p class="text-15" style="padding-top: 30px;">
+                    En nuestra cafetería, nuestro equipo de baristas altamente capacitados está comprometido con la
+                    excelencia en el servicio, garantizando que cada visita sea memorable.
+                </p>
+                <div class="hr2"></div>
+                <h3>"PARA MÍ, EL OLOR DEL CAFÉ RECIÉN HECHO ES UNO DE LOS MAYORES INVENTOS."</h3>
+                <div class="hr2"></div>
+                <p class="text-13">
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc
+                    dictum massa accumsan massa condimentum tempor. In dui est, rutrum ultrices vestibulum sed, blandit
+                    sit amet ante. Etiam in tellus arcu. Sed blandit convallis ipsum ut finibus. Praesent sagittis
+                    aliquet lacinia. Ut id ullamcorper arcu, sit amet lobortis turpis. Nullam finibus placerat dui in
+                    molestie. Praesent eleifend consectetur.
+                </p>
+                <h4>
+                    ALIQUAM PULVINAR ORNARE PURUS
+                </h4>
+                <p class="text-13">
+                    Curabitur porta ipsum eget velit mattis tincidunt. Morbi elit mauris, lacinia a lacinia venenatis,
+                    tincidunt id neque. Cras luctus orci a nulla sollicitudin lacinia. Aenean ultrices velit justo,
+                    luctus rutrum eros dapibus eu. Sed nec iaculis augue. Mauris varius dictum ligula, eu suscipit ipsum
+                    feugiat et. Sed ac dictum erat. Sed commodo feugiat ligula quis pellentesque.
+                </p>
+
+            </div>
+
+
+        </main>
+
+</body>
+
+</html>
