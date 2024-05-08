@@ -7,7 +7,7 @@ const mapOptions = {
 
 const map = new L.map('map', mapOptions);
 
-const greenIcon = L.icon({
+const icon = L.icon({
   iconUrl: 'assets/images/marker.png',
 
   iconSize: [30, 45],
@@ -16,7 +16,7 @@ const greenIcon = L.icon({
   popupAnchor: [-3, -76],
 });
 
-L.marker([-32.34339, -65.01315], { icon: greenIcon }).addTo(map);
+L.marker([-32.34339, -65.01315], { icon }).addTo(map);
 
 const layer = new L.tileLayer(
   'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.{ext}',

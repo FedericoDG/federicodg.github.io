@@ -35,7 +35,8 @@
   padding: 15px;
   width: 30%;
 }
-.main-galery{
+
+.main-galery {
   background-image: url('../images/main-pattern.png');
   background-repeat: repeat;
   margin-left: 230px;

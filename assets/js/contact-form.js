@@ -10,6 +10,7 @@ const form = document.getElementById('contact-form');
 const formName = document.getElementById('form-name');
 const formEmail = document.getElementById('form-email');
 const formMessage = document.getElementById('form-message');
+const sendBtn = document.getElementById('send-btn');
 const notification = document.getElementById('notification');
 const message = document.getElementById('message');
 const iconWrapper = document.getElementById('icon__wrapper');
@@ -35,8 +36,14 @@ formMessage.addEventListener('keypress', function () {
 
 function onFormSubmit(event) {
   event.preventDefault();
+
+  formName.classList.remove('error2');
+  formEmail.classList.remove('error2');
+  formMessage.classList.remove('error2');
+
   const data = new FormData(event.target);
   const object = Object.fromEntries(data.entries());
+
   if (object.name === '') {
     formName.focus();
     formName.classList.add('error2');
@@ -44,14 +51,14 @@ function onFormSubmit(event) {
     return;
   }
 
+  // TODO: Validar formato del nombre. Crear una Regex para eso llamada checkName.
+
   if (object.email === '') {
     formEmail.focus();
     formEmail.classList.add('error2');
     showNotification('Escribe tu correo', TYPE.error);
     return;
   }
-
-  // TODO: Validar formato del nombre. Crear una Regex para eso llamada checkName.
 
   if (!checkEmail.test(object.email)) {
     formEmail.focus();
@@ -68,9 +75,7 @@ function onFormSubmit(event) {
   }
 
   showNotification('¡Mensaje enviado!', TYPE.success);
-  formName.classList.remove('error2');
-  formEmail.classList.remove('error2');
-  formMessage.classList.remove('error2');
+
   form.reset();
   console.log({ object });
 }
@@ -98,8 +103,10 @@ const showNotification = (text, type) => {
   }
 
   notification.classList.add('show');
+  sendBtn.disabled = true;
   setTimeout(() => {
     notification.classList.remove('show');
+    sendBtn.disabled = false;
   }, 5000);
 };
 

@@ -8,7 +8,7 @@
   margin-left: 230px;
   position: absolute;
   width: calc(70% - 230px);
-  z-index: 99;
+  z-index: 999;
 }
 
 .notification {
@@ -76,6 +76,7 @@
 
 .show {
   display: flex !important;
+  z-index: 999 !important;
 }
 
 .hide {
