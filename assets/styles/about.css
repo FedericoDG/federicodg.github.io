@@ -4,7 +4,7 @@
     margin-bottom: 30px;
 }
 
-.text-18{
+.text-18 {
     font-size: 18px;
     font-weight: 300;
     font-family: "Ralaway", sans-serif;
@@ -12,31 +12,36 @@
     line-height: 1.65;
 }
 
-.text-13{
+.text-15
+{
+    font-size: 15px;
+    font-family: "Ralaway", sans-serif;
+}
+
+.text-13 {
     font-size: 13px;
     font-family: "Ralaway", sans-serif;
     line-height: 1.65;
 
 }
 
-h3{
+h3 {
     font-size: 24px;
     text-align: center;
     font-family: "Fjalla One", sans-serif;
     color: #333333;
 }
 
-h4{
+h4 {
     line-height: 1.1;
     font-family: "Fjalla One", sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #333333;
-    margin-top: 10.5px;
-    margin-bottom: 10.5px;
+    margin: 15px 0;
 }
 
-h5{
+h5 {
     font-family: "Fjalla One", sans-serif;
     font-size: 18px;
     color: #ab9178;
@@ -44,14 +49,12 @@ h5{
     font-weight: 400;
 }
 
-.textFrame img{
+.textFrame img {
 
     display: block;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width:100%;
+    width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.45);
 }
-
-
