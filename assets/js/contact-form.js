@@ -5,6 +5,7 @@ const TYPE = {
 
 const checkEmail =
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; // Formato de email válido
+const checkName = /^[A-ZÁÉÍÓÚÑ][a-záéíóúñA-ZÁÉÍÓÚÑ ]*$/; // Formato de nombre válido
 
 const form = document.getElementById('contact-form');
 const formName = document.getElementById('form-name');
@@ -51,7 +52,7 @@ function onFormSubmit(event) {
     return;
   }
 
-  // TODO: Validar formato del nombre. Crear una Regex para eso llamada checkName.
+  // TODO: Validar formato del nombre. Crear una Regex para eso llamada checkName. SIN NÚMEROS, CON Ñ, CON TODAS LAS LETRAS CON ACENTO
 
   if (object.email === '') {
     formEmail.focus();
@@ -67,12 +68,20 @@ function onFormSubmit(event) {
     return;
   }
 
-  if (object.message === '') {
-    formMessage.focus();
-    formMessage.classList.add('error2');
-    showNotification('Escibre un mensaje', TYPE.error);
+  //test name
+  if (!checkName.test(object.name)){
+    formName.focus();
+    formName.classList.add('error2');
+    showNotification('Nombre inválido', TYPE.error);
     return;
   }
+
+    if (object.message === '') {
+      formMessage.focus();
+      formMessage.classList.add('error2');
+      showNotification('Escibre un mensaje', TYPE.error);
+      return;
+    }
 
   showNotification('¡Mensaje enviado!', TYPE.success);
 
