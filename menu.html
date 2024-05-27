@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="./assets/styles/galery.css">
-  <link rel="stylesheet" href="./assets/styles/lightbox.css">
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/menu.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gravitas+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
@@ -16,14 +15,14 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-  <title>Charlotte Café</title>
+  <title>Menu</title>
 </head>
 
 <body>
   <!-- LOADER -->
-  <div class="loader">
+  <!-- <div class="loader">
     <div class="circle"></div>
-  </div>
+  </div> -->
 
   <div class="container">
     <!-- SIDEBAR -->
@@ -40,10 +39,10 @@
             <a href="./index.html">INICIO</a>
           </li>
           <li class="navbar__container-item">
-            <a href="./menu.html">MENU</a>
+            <a href="#" class="active">MENU</a>
           </li>
           <li class="navbar__container-item">
-            <a class="active" href="#">GALERÍA</a>
+            <a href="./galery.html">GALERÍA</a>
           </li>
           <li class="navbar__container-item">
             <a href="./about.html">NOSOTROS</a>
@@ -77,44 +76,12 @@
       </div>
     </nav>
     <!-- SIDEBAR -->
-    <main class="main-galery">
-      <div class="galery">
-        <div class="galery_grid">
 
-          <a href="./assets/images/simple-gallery-01.jpg" data-lightbox="models">
-            <img src="./assets/images/simple-gallery-01.jpg" alt="">
-          </a>
-          <a href="./assets/images/simple-gallery-02.jpg" data-lightbox="models">
-            <img src="./assets/images/simple-gallery-02.jpg" alt="">
-          </a>
-          <a href="./assets/images/simple-gallery-03.jpg" data-lightbox="models">
-            <img src="./assets/images/simple-gallery-03.jpg" alt="">
-          </a>
-          <a href="./assets/images/simple-gallery-04.jpg" data-lightbox="models">
-            <img src="./assets/images/simple-gallery-04.jpg" alt="">
-          </a>
-          <a href="./assets/images/simple-gallery-05.jpg" data-lightbox="models">
-            <img src="./assets/images/simple-gallery-05.jpg" alt="">
-          </a>
-          <a href="./assets/images/simple-gallery-06.jpg" data-lightbox="models">
-            <img src="./assets/images/simple-gallery-06.jpg" alt="">
-          </a>
-          <a href="./assets/images/simple-gallery-07.jpg" data-lightbox="models">
-            <img src="./assets/images/simple-gallery-07.jpg" alt="">
-          </a>
-          <a href="./assets/images/simple-gallery-08.jpg" data-lightbox="models">
-            <img src="./assets/images/simple-gallery-08.jpg" alt="">
-          </a>
-          <a href="./assets/images/taza.png" data-lightbox="models" data-title="Caption9">
-            <img src="./assets/images/taza.png" alt="">
-          </a>
-        </div>
-      </div>
-
-    </main>
+    <menu class="main-processing">
+      <h1>EN PROCESO<span class="dots"></span></h1>
+    </menu>
   </div>
-  <script src="./assets/js/lightbox-plus-jquery.js"></script>
-  <script src="./assets/js/gallery.js"></script>
+  <script src=" ./assets/js/slider.js"></script>
 </body>
 
 </html>

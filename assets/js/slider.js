@@ -1,4 +1,4 @@
-let items = document.querySelectorAll('.slider__list-item');
+let items = Array.from(document.querySelectorAll('.slider__list-item')); //Esto es un Array
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const arrows = document.getElementById('slider-arrows');
